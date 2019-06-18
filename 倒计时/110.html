@@ -20,22 +20,22 @@
       }
       var canvasElement = document.getElementById('canvas');
       var context = canvasElement.getContext('2d');
-      progress = 360 * currentSeconds / countDownSeconds;
-      progress_pi = Math.PI * (progress / 180 - 1 / 2);
-      context.beginPath();
-      context.moveTo(700, 400);
-      context.arc(700, 400, 80, 0, Math.PI * 2, false);
-      context.closePath();
-      context.fillStyle = '#4BF41B';
-      context.fill();
+    //   progress = 360 * currentSeconds / countDownSeconds;
+    //   progress_pi = Math.PI * (progress / 180 - 1 / 2);
+    //   context.beginPath();
+    //   context.moveTo(700, 400);
+    //   context.arc(700, 400, 80, 0, Math.PI * 2, false);
+    //   context.closePath();
+    //   context.fillStyle = '#4BF41B';
+    //   context.fill();
 
-      context.beginPath();
-      context.moveTo(700, 400);
-      context.arc(700, 400, 80, -Math.PI * 1 / 2, progress_pi, false);
-      context.closePath();
-      context.fillStyle = 'red'
-      context.lineCap = 'round';
-      context.fill();
+    //   context.beginPath();
+    //   context.moveTo(700, 400);
+    //   context.arc(700, 400, 80, -Math.PI * 1 / 2, progress_pi, false);
+    //   context.closePath();
+    //   context.fillStyle = 'red'
+    //   context.lineCap = 'round';
+    //   context.fill();
 
       context.beginPath();
       context.arc(700, 400, 65, 0, Math.PI * 2, false);
@@ -43,7 +43,7 @@
       context.fillStyle = 'white';
       context.fill();
 
-      context.font = "bold 40pt Arial";
+      context.font = "bold 160pt Arial";
       context.fillStyle = "red";
       context.textAlign = "center";
       context.textBaseline = 'middle';
