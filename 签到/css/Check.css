@@ -1,24 +1,30 @@
-
-
-body,html{
-overflow: hidden;
-width: 100%;
-height: 100%;
-color: aqua
+body,
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: aqua;
+    background-image: url("https://res3.hixianchang.com/qn/pro/pcwall/static/theme/newdefault/bg.png");
+    background-size: cover;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+    /* transform: scale(0.94375); */
 }
+
 /* //叮当猫特效动画 */
-.rotatein{
+.rotatein {
     animation: rotatein 2s ease-out;
 }
-.pen{
+
+.pen {
     border-radius: 50%;
-    float: left;
     width: 130px;
     height: 160px;
     margin: 10px;
     padding: 0;
 }
-.pen img{
+
+.pen img {
     width: 124px;
     height: 124px;
     border: 3px solid #eee;
@@ -26,7 +32,8 @@ color: aqua
     overflow: hidden;
     box-shadow: 1px 1px 10px #000
 }
-.pen p{
+
+.pen p {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -54,12 +61,12 @@ color: aqua
 
     30% {
         -webkit-transform: rotate(0deg) scale(2);
-        transform: rotate(0deg) scale(2)
+        transform: rotate(0deg) scale(2) translate(25%, 25%);
     }
 
     85% {
         -webkit-transform: rotate(0deg) scale(2);
-        transform: rotate(0deg) scale(2)
+        transform: rotate(0deg) scale(2) translate(25%, 25%)
     }
 
     to {
@@ -67,10 +74,11 @@ color: aqua
         transform: rotate(-1turn) scale(1)
     }
 }
+
 /* 动画end */
 /* 外层section容器 */
 
-section{
+section {
     width: 100%;
     height: 570px;
     padding: 26px 0 0 30px;
@@ -79,4 +87,126 @@ section{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+header .header-box {
+    width: calc(100% - 100px);
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 10%;
+    height: 80%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: left bottom;
+    object-position: left bottom;
+}
+
+.title p{
+    font-family: 微软雅黑, "Microsoft YaHei";
+    color: rgb(255, 192, 0);
+    text-align: center;
+    font-size: 48px;
+}
+.flex{
+    color: #fff;
+}
+.flex span{
+    font-size: 42px;
+}
+
+section{
+    width: 100%;
+    /* height: 600px; */
+    height: calc(100% - 150px);
+    padding: 20px 0 30px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+section div.com{
+    width: 92%;
+    height: 100%;
+    margin: 0 4%;
+    color: #fff;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.3);
+    padding: 26px 0 0 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+.com::-webkit-scrollbar {
+    width: 7px
+}
+
+.com::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    border-radius: 10px
+}
+
+.com::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)
+}
+
+.com::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, .2)
+}
+
+footer{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 5px;
 }
